@@ -1,1 +1,142 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prashant | Portfolio</title>
+  <style>
+    /* Reset & Fonts */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* Glass Morphism Card */
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .glass:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    /* Sections */
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #00c6ff;
+    }
+
+    /* Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: #fff;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .btn:hover {
+      background: linear-gradient(90deg, #0072ff, #00c6ff);
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prashant</h1>
+    <p>Feature Tester • Cloud Ops • DevOps Enthusiast • UI Designer</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <div class="glass">
+      <p>
+        I specialize in OpenStack VM orchestration, cloud operations, and incident resolution. 
+        Expanding into DevOps, CI/CD, and workflow automation, I thrive on solving complex infrastructure 
+        challenges and empowering teams with reusable documentation and secure, scalable solutions.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="glass"><h3>Linux Networking</h3><p>Expert in disk management, hybrid environments, and troubleshooting.</p></div>
+      <div class="glass"><h3>Automation</h3><p>Advanced Python & shell scripting with robust error handling.</p></div>
+      <div class="glass"><h3>Containers</h3><p>Docker, Apache, config automation, and security hardening.</p></div>
+      <div class="glass"><h3>DevOps</h3><p>CI/CD pipelines, Kubernetes workflows, and process optimization.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="glass"><h3>BFAT → NTAM Migration</h3><p>Guided migration of legacy test scripts to Rocky Linux with secure execution.</p></div>
+      <div class="glass"><h3>Secure Docker Templates</h3><p>Minimal, hardened Dockerfiles for Apache running as non-root.</p></div>
+      <div class="glass"><h3>Proxy CA Integration</h3><p>Resolved TLS trust failures in Docker/Minikube with custom CA certificates.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="glass" style="text-align:center;">
+      <p>Let’s collaborate on cloud, DevOps, or design projects.</p>
+      <a href="mailto:prashant@example.com" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Prashant | Designed with Glass Morphism</p>
+  </footer>
+
+</body>
+</html>
