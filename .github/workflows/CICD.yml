@@ -1,7 +1,18 @@
 name: CICD
-#manual clock
+
 on:
   workflow_dispatch:
+    inputs:
+      environment:
+        description: "This is the environment value where this workflow runs"
+        default: "dev"
+        required: true
+        type: choice
+        options:
+          - dev
+          - prod
+          - staging
+
 jobs:
 
   code:
@@ -15,18 +26,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build Docker Container
-        run: echo "Docker container build"
+        run: echo "Docker container build for ${{ github.event.inputs.environment }}"
 
   test:
     needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Test the container
-        run: echo "Testing the container"
+        run: echo "Testing the container in ${{ github.event.inputs.environment }}"
 
   deploy:
     needs: [test, build]
     runs-on: ubuntu-latest
     steps:
       - name: Deploy the app
-        run: echo "Docker compose deployed the app"
+        run: echo "Docker compose deployed the app to ${{ github.event.inputs.environment }}"
