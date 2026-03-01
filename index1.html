@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prashant | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      display: flex;
+      justify-content: center;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      padding: 1rem;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover { color: #00c6ff; }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 2rem;
+    }
+    h1, h2 {
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glass {
+      background: rgba(255,255,255,0.08);
+      border-radius: 16px;
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 2rem;
+      max-width: 800px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .glass:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .btn {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: #fff;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+    .btn:hover { transform: scale(1.05); }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h1>Prashant</h1>
+    <div class="glass">
+      <p>
+        Technical Specialist at Nokia R&D | CKA Certified | DevSecOps Engineer  
+        I specialize in deploying containerized telecom applications on Public Cloud (AWS | Azure).  
+        My focus is on building robust, scalable infrastructure and ensuring seamless deployments in telecom environments.
+      </p>
+      <p>
+        🔧 Experienced in CI/CD, infrastructure automation, monitoring & logging, and secure container orchestration.  
+        💡 Passionate about solving real-world challenges in telecom cloud deployments and optimizing performance, reliability, and scalability.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="glass"><h3>Cloud Platforms</h3><p>Azure | AWS | Infrastructure Automation</p></div>
+      <div class="glass"><h3>Containers</h3><p>Docker | Kubernetes | Terraform | DevSecOps</p></div>
+      <div class="glass"><h3>CI/CD</h3><p>Pipeline design, automation, faster delivery cycles</p></div>
+      <div class="glass"><h3>Linux & Scripting</h3><p>Linux administration | Bash scripting | Monitoring & Logging</p></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="grid">
+      <div class="glass">
+        <h3>Nokia R&D</h3>
+        <p>Technical Specialist | CKA Certified</p>
+        <p>Deployed containerized telecom applications on AWS & Azure. Focused on scalable infrastructure, CI/CD, and automation.</p>
+      </div>
+      <div class="glass">
+        <h3>DevOps & Cloud</h3>
+        <p>Hands-on with Docker, Kubernetes, Terraform, and cloud-native solutions. Streamlined operations with infrastructure-as-code.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="glass">
+      <p>Let’s connect if you’re into cloud-native telecom, DevOps practices, or building the future of communication tech!</p>
+      <a href="mailto:prashant@example.com" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Prashant | Inspired by modern portfolio designs</p>
+  </footer>
+
+</body>
+</html>
+
